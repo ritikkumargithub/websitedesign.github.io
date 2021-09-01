@@ -1,0 +1,391 @@
+@import('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+.nav_style{
+    background: #fff;
+    box-shadow: 0 10px 30px 0 rgba(138, 155,165, .15);
+}
+.navbar-brand img{
+    width: 100px;
+    height: 50px;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /*color: #ff7230;*/
+    color: #333;
+    position: relative;
+}
+.navbar-nav li a:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 5%;
+    background: #ff7230;
+    transform: all 0.3s linear ;
+}
+.navbar-nav li a:hover:before{
+    width: 80%;
+}
+.navbar-nav li a:hover{
+    color: #ff7230 !important;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #ff7230 !important;
+}
+@media  (max-width:998px)  {
+    .navbar-nav {
+        margin-top:40px;
+        text-align:center;
+    }
+    .navbar-nav li a:hover:before{
+        width: 0;
+    }
+}
+.header_text{
+    font-size: 26px;
+    color: #8c8c8c;
+    margin-top: 80px;
+}
+.header_text2{
+    font-size: 26px;
+    color: #2d3436;
+    margin-bottom: 70px;
+}
+.span_header_text{
+    color: #ff7230;
+}
+.hire_me{
+    width: 150px;
+    height: 40px;
+    background-color: #ff7230;
+    font-size: 20px;
+    color:#fff;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transform: all 0.3s linear;
+}
+.about_me{
+    width: 150px;
+    height: 40px;
+    color: #ff7230;
+    font-size: 20px;
+    background-color:#fff;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid #ff7230;
+    transform: all 0.3s linear;
+}
+.hire_me:hover{
+    background-color: #fff;
+    color: #ff7230;
+    border: 1px solid #ff7230;
+}
+.about_me:hover{
+    background-color: #ff7230;
+    color: #fff;
+    border: none;
+}
+.header_mail p{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+.header_mail p:nth-child(2){
+    margin-top: -20px;
+}
+.image1 img{
+    width: 100%;
+    height: 70vh;
+}
+.about_sec{
+    padding-top: 50px ;
+}
+.main_title h2{
+    font-weight:400;
+    font-size: 70px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+}
+.about_text{
+    margin-top: 40px;
+}
+.about_text h1{
+    font-size: 33px;
+    color: #000;
+    margin-top: -20px;
+    margin-bottom: 25px;
+
+}
+.about_text p{
+    font-size: 20px;
+    color: rgba(41, 41, 41, 0.993);
+}
+.image img{
+    width: 100%;
+    height: 50vh;
+}
+
+
+.expert_sec{
+    padding-top: 50px;
+}
+.main_title p{
+    font-size: 26px;
+    color: rgba(41, 41, 41, 0.993);
+    text-align: center;
+}
+.expert_sec .progress{
+    width: 90%;
+    height: 14px;
+    border-radius: 7px;
+}
+.common_div{
+
+}
+.expert_sec .pb_1{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #ea2148;
+}
+.expert_sec .pb_2{
+    width: 83%;
+    border-radius: 7px;
+    background-color: #ff7230;
+}
+.expert_sec .pb_3{
+    width: 88%;
+    border-radius: 7px;
+    background-color: #1c9588;
+}
+.expert_sec h2{
+    position: relative;
+}
+.expert_h1:after{
+    content: '93%';
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    font-size: 16px;
+    color: #000;
+    font-size: 500;
+}
+.expert_h2:after{
+    content: '83%';
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    font-size: 16px;
+    color: #000;
+    font-size: 500;
+}
+.expert_h3:after{
+    content: '88%';
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    font-size: 16px;
+    color: #000;
+    font-size: 500;
+}
+.our_services{
+    padding: 50px 0 70px 0;
+}
+.services_div{
+    background-color: #f6f6f6;
+    padding: 20px 10px 70px 10px;
+    margin-top: 50px;
+    transition: all 0.1s linear;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(138, 155,165, .15);
+}
+.services_div:hover{
+    background: #fff;
+    box-shadow: 0 0 4px 1px grey;
+}
+.services_div h1{
+    text-align: center;
+    font-size: 52px;
+    color: #ff7230;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    background: #ffeee6;
+}
+.services_div h1:hover{
+    background: #fff;
+    border:1px solid #ff7230;
+}
+.services_div .services_list_icon{
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+.services_div  img{
+    padding-right: 2px;
+    margin-left: 2px;
+}
+.fa-heart{
+    color: rgb(231, 212, 201) !important;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}
+.services_div:hover .fa-heart{
+    color: #f1966b !important;
+}
+.services_div .col-lg-3 .col-md-4 .col-10{
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+}
+.services_div li{
+    list-style: none;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-left: 5px;
+} 
+.services_div li:first-child{
+    padding-top: 20px;
+}
+
+
+.hireme_section{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bs1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.hireme_section h1{
+    font-size: 40px;
+    color: #ff7230;
+}
+.hireme_section p{
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+.hireme_section h4{
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+.contactme_sec{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.contact_share_div{
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    background: #f6f6f6;
+    transition: all 0.2s linear;
+}
+.contact_share_div:hover{
+    background-color: #ffffff;
+    border: 1px solid #ff7230;
+    filter: drop-shadow(2px 0px 8px rgba(0,0,0,0.18));
+}
+.contact_share_div:hover .fas , .fab , .far{
+    color: #ff7230;
+}
+.contact_share_div p{
+    margin: 0;
+}
+.fa-facebook-f,.fa-instagram,.fa-dribbble,.fa-pinterest,.fa-behance{
+    color: #000;
+}
+
+.socialsites_links .fa-facebook-f:hover{
+    color: rgba(16, 16, 236, 0.863);
+}
+.socialsites_links .fa-instagram:hover{
+    color: rgb(231, 17, 17);
+}
+.socialsites_links .fa-dribbble:hover{
+    color: rgb(0, 255, 85);
+}
+.socialsites_links .fa-pinterest:hover{
+    color: rgba(16, 16, 236, 0.863);
+}
+.socialsites_links .fa-behance:hover{
+    color: rgba(16, 236, 181, 0.863);
+}
+
+
+footer{
+    width: 100%;
+    line-height: 50px;
+    background:#ff7230;
+    color: #fff;
+}
+footer p{
+    margin: 0;
+}
+@media  (max-width:992px) {
+    .main_title h2{
+        font-size:30px;
+        text-align: center !important;
+        justify-content: center;
+    }
+    .main_title p{
+        font-size: 18px;
+    }
+    .about_text{
+        margin-top: 30px;
+    }
+    .about_text h1{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .about_text p{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .common_div{
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px !important;
+        margin: auto;
+    }
+    .expert_sec h2{
+        text-align: left;
+    }
+    .hireme_section p{
+        font-size: 22px;
+        letter-spacing: 0px;
+    }
+    .hireme_section h3{
+        font-size: 21px;
+        color: #fff;
+        word-spacing: 2px;
+    }
+    .contact_inner{
+        margin: auto;
+    }
+    .image1 img{
+        width: 100%;
+        height: 50vh;
+    }
+}
